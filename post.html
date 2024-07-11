@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="framework/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="framework/reset.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="./framework/icon/font_c74foekh3c4/iconfont.css">
+    <link rel="stylesheet" href="./framework/icon/font_sls4q6q11r/iconfont.css">
+    <link rel="stylesheet" href="./framework/icon/font_c1sd7urtjr/iconfont.css">
+    <title>发帖子</title>
+</head>
+<body>
+    <header>
+        <div class="status-bar">
+            <div class="bar-left">
+                <span class="time">14:53</span>
+                <span class="iconfont icon-QQyinle"></span>
+            </div>
+            <div class="bar-right">
+                <span class="iconfont icon-wurao"></span>
+                <span class="iconfont icon-lanya"></span>
+                <span class="iconfont icon-lvzhou_Gxindao"></span>
+                <span class="iconfont icon-dianliang-chongdian-L"></span>
+            </div>
+        </div>
+        <div class="header-content">
+            <a href="index.html" class="iconfont icon-zuojiantou"></a>
+            <h1>信息发布</h1>
+        </div>
+    </header>
+    <div class="container">
+        <input type="text" class="input-title" placeholder="标题，4~20字，精准描述你的需求">
+        <textarea class="input-description" rows="5" placeholder="详细描述你的需求，禁止发布重复信息，违法违规，广告营销类，含二维码等内容。"></textarea>
+        <div class="add-image">
+            <label for="file-input">
+                <div class="image-placeholder">
+                    <span class="iconfont icon-jiahao"></span>
+                </div>
+            </label>
+            <input type="file" id="file-input" style="display: none;">
+        </div>
+        
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" id="verified-only">
+                <label for="verified-only">仅认证可见</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="no-comments">
+                <label for="no-comments">此贴不接受评论</label>
+            </div>
+        </div>
+        
+        <div class="add-contact">
+            <label for="contact-method">添加联系方式：</label>
+            <select id="contact-method" onchange="toggleContactForm()">
+                <option value="none">请选择</option>
+                <option value="phone">手机/微信/QQ</option>
+            </select>
+        </div>
+        
+        <div class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="contact-name">联系人</label>
+                <input type="text" id="contact-name" placeholder="您的姓名">
+            </div>
+            <div class="form-group">
+                <label for="contact-phone">手机</label>
+                <input type="text" id="contact-phone" placeholder="手机号">
+            </div>
+            <div class="form-group">
+                <label for="contact-qq">QQ</label>
+                <input type="text" id="contact-qq" placeholder="6~15位QQ号码">
+            </div>
+            <div class="form-group">
+                <label for="contact-wechat">微信</label>
+                <input type="text" id="contact-wechat" placeholder="4~20位微信号">
+            </div>
+        </div>
+        
+        <div class="highlight-color">
+            <label>帖子在列表中以突出颜色展示：</label>
+            <div class="color-options">
+                <span class="color" data-durations="保持8小时,保持16小时,保持24小时" data-prices="1.88元,3.28元,4.68元" style="background-color: #e0f7e0;"></span>
+                <span class="color" data-durations="保持8小时,保持16小时,保持24小时" data-prices="1.88元,3.28元,4.68元" style="background-color: #e0f7f7;"></span>
+                <span class="color" data-durations="保持8小时,保持16小时,保持24小时" data-prices="1.88元,3.28元,4.68元" style="background-color: #e0e0f7;"></span>
+                <span class="color" data-durations="保持8小时,保持16小时,保持24小时" data-prices="1.88元,3.28元,4.68元" style="background-color: #f7e0f7;"></span>
+                <span class="color" data-durations="保持8小时,保持16小时,保持24小时" data-prices="1.88元,3.28元,4.68元" style="background-color: #f7e0e0;"></span>
+            </div>
+            <div class="duration-options" id="duration-options">
+                <button id="duration-8" class="duration-btn" onclick="selectDuration(1.88)">保持8小时<br>1.88元</button>
+                <button id="duration-16" class="duration-btn" onclick="selectDuration(3.28)">保持16小时<br>3.76元</button>
+                <button id="duration-24" class="duration-btn" onclick="selectDuration(4.68)">保持24小时<br>5.64元</button>
+            </div>
+        </div>
+        
+        <div class="top-display">
+            <label>帖子置顶展示：</label>
+            <div class="time-options">
+                <span class="time-btn" data-price="8.8元">1小时</span>
+                <span class="time-btn" data-price="13.8元">2小时</span>
+                <span class="time-btn" data-price="25.8元">4小时</span>
+                <span class="time-btn" data-price="48.8元">8小时</span>
+            </div>
+        </div>
+        <button id="submit-btn" class="submit-button">发布信息</button>
+    </div>
+    <script>
+        function toggleContactForm() {
+            const contactMethod = document.getElementById('contact-method').value;
+            const contactForm = document.getElementById('contact-form');
+            if (contactMethod === 'phone') {
+                contactForm.classList.add('active');
+            } else {
+                contactForm.classList.remove('active');
+            }
+        }
+
+        let colorPrice = 0;
+        let timePrice = 0;
+
+        document.querySelectorAll('.color-options .color').forEach(color => {
+            color.addEventListener('click', function() {
+                const durations = this.getAttribute('data-durations').split(',');
+                const prices = this.getAttribute('data-prices').split(',');
+            
+                document.getElementById('duration-8').innerHTML = `${durations[0]}<br>${prices[0]}`;
+                document.getElementById('duration-8').setAttribute('data-price', prices[0].replace('元', ''));
+
+                document.getElementById('duration-16').innerHTML = `${durations[1]}<br>${prices[1]}`;
+                document.getElementById('duration-16').setAttribute('data-price', prices[1].replace('元', ''));
+
+                document.getElementById('duration-24').innerHTML = `${durations[2]}<br>${prices[2]}`;
+                document.getElementById('duration-24').setAttribute('data-price', prices[2].replace('元', ''));
+
+                document.querySelectorAll('.duration-btn').forEach(btn => btn.classList.add('active'));
+            });
+        });
+
+        document.querySelectorAll('.time-options .time-btn').forEach(timeBtn => {
+            timeBtn.setAttribute('data-original-text', timeBtn.innerHTML);
+
+            timeBtn.addEventListener('click', function() {
+                // 恢复所有时间按钮的初始状态
+                document.querySelectorAll('.time-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    const originalText = btn.getAttribute('data-original-text');
+                    if (originalText) {
+                        btn.innerHTML = originalText;
+                    }
+                });
+            
+                // 改变点击时间按钮的文本
+                this.classList.add('active');
+                const price = this.getAttribute('data-price');
+                timePrice = parseFloat(price.replace('元', ''));
+                const originalText = this.getAttribute('data-original-text');
+                this.innerHTML = `${originalText}<br>${price}`;
+                updateSubmitButton();
+            });
+        });
+
+        function selectDuration(price) {
+            colorPrice = price;
+            updateSubmitButton();
+        }
+        function updateSubmitButton() {
+           const totalPrice = (colorPrice + timePrice).toFixed(2);
+           const submitBtn = document.getElementById('submit-btn');
+           submitBtn.innerHTML = `支付${totalPrice}元发布`;
+        }
+        document.querySelectorAll('.duration-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 移除其他按钮的绿色背景
+                document.querySelectorAll('.duration-btn').forEach(btn => {
+                    btn.style.backgroundColor = '#f0f0f0';
+                });
+            
+                // 将当前点击的按钮变绿
+                this.style.backgroundColor = '#d0f0d0';
+            
+                selectDuration(parseFloat(this.getAttribute('data-price')));
+            });
+        });
+    </script>
+</body>
+</html>

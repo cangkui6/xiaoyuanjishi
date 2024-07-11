@@ -1,0 +1,224 @@
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header-content a.icon-zuojiantou {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: inherit; /* 保持箭头颜色与其他文字一致 */
+    text-decoration: none; /* 移除链接下划线 */
+}
+.header-content h1 {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+.report-button {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    color: #007bff;
+    cursor: pointer;
+}
+.post {
+    background-color: #fff;
+    padding: 15px;
+    padding-top: 5px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* 为了绝对定位举报按钮 */
+}
+.post .user {
+    display: flex;
+    align-items: center;
+}
+.post .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 0px;
+}
+.post .user .name {
+    font-weight: bold;
+    color: #00bfa5;
+}
+.post-header .user-tag {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.username {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 0px;
+    padding-bottom:1px;
+    color: #559faf;
+}
+.user-status {
+    background-color: rgb(174, 225, 246);
+    color: rgb(45, 118, 145);
+    padding: 2px 5px;
+    display: inline-block;
+    font-size: 6px;
+}
+.post-content {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.post-content .emoji {
+    margin-left: 5px;
+}
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+}
+.post-footer .views {
+    color: #007bff;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.post-actions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.post-actions div span {
+    margin-top: 5px;
+    text-align: center;
+}
+.comments {
+    padding: 0 15px;
+}
+
+
+.comment, .reply {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0px 0;
+    border-bottom: 1px solid #ddd;
+}
+.comment{
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.comment .user, .reply .user {
+    display: flex;
+    align-items: center;
+}
+
+.comment .user img, .reply .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 0px;
+}
+
+.comment .user .username, .reply .user .username {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 0px;
+    padding-bottom:1px;
+    color: #559faf;
+}
+
+.comment .user .user-status, .reply .user .user-status {
+    background-color: rgb(174, 225, 246);
+    color: rgb(45, 118, 145);
+    padding: 2px 5px;
+    display: inline-block;
+    font-size: 6px;
+}
+
+.comment-content, .reply-content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.comment-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.comment-footer .iconfont {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.comment-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+    position: relative; /* Add this line */
+}
+
+.comment-footer .time { /* Add this block */
+    position: absolute;
+    left: 0;
+}
+.comment-footer {
+    display: flex;
+    justify-content: space-between; /* Change to space-between */
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.comment-footer .time {
+    margin-right: auto; /* Adjust this line */
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 14px;
+    right: 24px;
+}
+
+.actions .iconfont {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.actions .iconfont.flipped {
+    transform: rotate(180deg); /* Add this line */
+}
+.time{
+    margin-top: 7.5px;
+}
+.comment-input p{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.sort-buttons {
+    display: flex;
+    align-items: center;
+}

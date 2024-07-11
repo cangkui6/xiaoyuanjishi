@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 5px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.input-title, .input-description {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.add-image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.iconfont.icon-jiahao {
+    font-size: 24px;
+    color: #ccc;
+}
+.options {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: end;
+}
+.option {
+    display: flex;
+    align-items: center;
+}
+.option input {
+    margin-right: 5px;
+}
+.add-contact, .highlight-color, .top-display {
+    margin-bottom: 20px;
+}
+.color-options, .time-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.color-options span, .time-options span {
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    padding: 5px;
+}
+.color-options span:nth-child(1) { background-color: #e0f7e0; }
+.color-options span:nth-child(2) { background-color: #e0f7f7; }
+.color-options span:nth-child(3) { background-color: #e0e0f7; }
+.color-options span:nth-child(4) { background-color: #f7e0f7; }
+.color-options span:nth-child(5) { background-color: #f7e0e0; }
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #00cc66;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #00b359;
+}
+.header-content a.icon-zuojiantou {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: inherit; /* 保持箭头颜色与其他文字一致 */
+    text-decoration: none; /* 移除链接下划线 */
+}
+.header-content h1 {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+.contact-form {
+    display: none;
+    margin-top: 10px;
+}
+.contact-form.active {
+    display: block;
+}
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-form .form-group label {
+    flex: 0 0 80px;
+    margin-bottom: 0;
+}
+.contact-form .form-group input {
+    flex: 1;
+}
+.color-options span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.selected-info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.duration-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.duration-btn {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none; /* 初始状态下隐藏 */
+}
+.duration-btn.active {
+    display: inline-block; /* 点击颜色选项后显示 */
+}
+.time-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.time-btn {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s;
+    min-width: 80px; /* 确保按钮宽度一致 */
+    height: 50px; /* 确保按钮高度一致 */
+}
+.time-btn.active {
+    background-color: #d0f0d0; /* 激活时按钮背景色变化 */
+}
+.duration-btn.active {
+    background-color: #ffffff; /* 激活时按钮背景色变绿 */
+}
+

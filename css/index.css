@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9fbfd;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 16px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0 2px 0;
+    background-color: #fff;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+nav ul li svg{
+    margin-bottom: 2px;
+    font-size:30px ;
+}
+
+main {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 60px; /* 确保内容不被footer挡住 */
+}
+
+.post {
+    background-color: #fff;
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-top:5px ;
+    margin-bottom: 15px;
+    border-radius: 2.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5px;
+    flex-wrap: wrap;
+}
+
+.user-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.username {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 0px;
+    padding-bottom:1px;
+    color: #559faf;
+}
+
+.user-status {
+    background-color: rgb(174, 225, 246);
+    color: rgb(45, 118, 145);
+    padding: 2px 5px;
+    display: inline-block;
+    font-size: 6px;
+}
+
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+footer nav ul li {
+    font-size: 14px;
+}
+
+footer nav ul li .iconfont {
+    font-size: 25px; /* 放大图标 */
+    margin-bottom: 2.5px; /* 增加图标和文字之间的间距 */
+}
+
+.add-post {
+    background-color: #5dae7b;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+
+.post-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.post-actions .iconfont {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.post-actions .like-button.active {
+    color: green;
+}
+
+.actions {
+    margin-bottom: 7.5px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7.5px;
+}
+
+.comment{
+    margin-left: 10px;
+}
+.comment-count{
+    font-size: 10px;
+}
+.like-count{
+    font-size: 10px;
+}
+.post p{
+    font-size: 12.5px;
+}
+
+/* 添加时间 */
+.post-time {
+    display: block;
+    font-size: 9px;
+    color: gray;
+}
+/* 在第一个帖子下边添加三张图片 */
+.photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.photo-gallery img {
+    width: 32%;
+    border-radius: 5px;
+}
+/* 更多样式 */
+.post {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.post .menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.post .menu .menu-options {
+    display: none;
+    position: absolute;
+    bottom: 40px; /* Adjust the bottom position */
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px; /* Adjust the width if necessary */
+}
+
+.post .menu .menu-options li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.post .menu .menu-options li:hover {
+    background: #f0f0f0;
+}
+
+.post .menu .menu-options li:first-child {
+    color: red; /* 将第一个菜单项（假设是举报）设置为红色 */
+}
+
+/* 设置a标签的集市两个字为绿色 */
+footer nav ul li:first-child a{
+    color: rgb(55, 154, 123);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a p {
+    color: inherit; /* 确保 p 元素继承父级颜色 */
+}

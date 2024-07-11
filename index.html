@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="framework/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="framework/reset.css">
+    <link rel="stylesheet" href="./framework/icon/font_sz0eiqafwwd/iconfont.css">
+    <link rel="stylesheet" href="./framework/icon/font_c74foekh3c4/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./framework/icon/font_7ydjpyu6ls/iconfont.js"></script>
+    <title>首页</title>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="status-bar">
+            <div class="bar-left">
+                <span class="time">14:50</span>
+                <span class="iconfont icon-QQyinle"></span>
+            </div>
+            <div class="bar-right">
+                <span class="iconfont icon-wurao"></span>
+                <span class="iconfont icon-lanya"></span>
+                <span class="iconfont icon-lvzhou_Gxindao"></span>
+                <span class="iconfont icon-dianliang-chongdian-L"></span>
+            </div>
+        </div>
+        <h1>赞噢校园集市·云大站</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="postlist.html"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-liwu"></use>
+                        </svg></a>
+                    二手闲置
+                </li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-yusan"></use>
+                    </svg>打听求助
+                </li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-aixin"></use>
+                    </svg>恋爱交友
+                </li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xigua"></use>
+                    </svg>校园趣事
+                </li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shizhong"></use>
+                    </svg>兼职招聘
+                </li>
+                <li><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gongwenbao"></use>
+                    </svg>校园招聘
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="post" id="post-1">
+            <a href="postdetail.html">
+                <div class="user-info">
+                    <img src="./image/微信图片_20240708163753.jpg" alt="用户头像">
+                    <div>
+                        <span class="username">苍葵</span>
+                        <span class="user-status">本科生</span>
+                        <span class="post-time">刚刚</span>
+                    </div>
+                </div>
+                <p>30r出三个衣服收纳箱。尺寸见p3，带滑轮
+                    有点压凹，但不影响正常使用
+                    可小刀</p>
+                <div class="photo-gallery">
+                    <img src="./image/微信图片_20240711211226.jpg" alt="照片1">
+                    <img src="./image/微信图片_20240711211241.jpg" alt="照片2">
+                    <img src="./image/微信图片_20240711211228.jpg" alt="照片3">
+                </div>
+            </a>
+            <div class="actions">
+                <span class="like" onclick="toggleLike(1)"><i class="fa fa-thumbs-o-up"></i> <span class="like-count"></span></span>
+                <span class="comment"><i class="fa fa-comment-o"></i> <span class="comment-count">3</span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-ellipsis-h" onclick="toggleMenu(this)"></i>
+                <ul class="menu-options">
+                    <li onclick="reportPost(this)">举报</li>
+                    <li onclick="cancelAction(this)">取消</li>
+                </ul>
+            </div>            
+        </section>
+        <section class="post" id="post-2">
+            <a href="postdetail.html">
+                <div class="user-info">
+                    <img src="./image/微信图片_20240708164046.jpg" alt="用户头像">
+                    <div>
+                        <span class="username">小埋</span>
+                        <span class="user-status">高中生</span>
+                        <span class="post-time">刚刚</span>
+                    </div>
+                </div>
+                <p>跟比自己大一届的住。有没有UU跟比自己大一届的住百百，因为分宿舍的时候发生了很抓马的事情。被分配到跟比自己大一届的住，所以目前好慌好害怕们们，有没有uu来说一下，拜托拜托</p>
+            </a>
+            <div class="actions">
+                <span class="like" onclick="toggleLike(2)"><i class="fa fa-thumbs-o-up"></i> <span class="like-count">1</span></span>
+                <span class="comment"><i class="fa fa-comment-o"></i> <span class="comment-count">0</span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-ellipsis-h" onclick="toggleMenu(this)"></i>
+                <ul class="menu-options">
+                    <li onclick="reportPost(this)">举报</li>
+                    <li onclick="cancelAction(this)">取消</li>
+                </ul>
+            </div> 
+        </section>
+        <section class="post" id="post-3">
+            <a href="postdetail.html">
+                <div class="user-info">
+                    <img src="./image/微信图片_20240708164116.jpg" alt="用户头像">
+                    <div>
+                        <span class="username">小鸟</span>
+                        <span class="user-status">硕士生</span>
+                        <span class="post-time">1分钟前</span>
+                    </div>
+                </div>
+                <p>大家放假都在干麻啊?。好困好困好困，为什么我这
+                    么困/：-）
+                    大家在家做些什么呢?</p>
+            </a>
+            <div class="actions">
+                <span class="like" onclick="toggleLike(3)"><i class="fa fa-thumbs-o-up"></i> <span class="like-count"></span></span>
+                <span class="comment"><i class="fa fa-comment-o"></i> <span class="comment-count">2</span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-ellipsis-h" onclick="toggleMenu(this)"></i>
+                <ul class="menu-options">
+                    <li onclick="reportPost(this)">举报</li>
+                    <li onclick="cancelAction(this)">取消</li>
+                </ul>
+            </div> 
+        </section>
+        <section class="post" id="post-4">
+            <a href="postdetail.html">
+                <div class="user-info">
+                    <img src="./image/微信图片_20240708164117.jpg" alt="用户头像">
+                    <div>
+                        <span class="username">爱坤</span>
+                        <span class="user-status">博士生</span>
+                        <span class="post-time">22分钟前</span>
+                    </div>
+                </div>
+                <p>一好痛苦怎么办。喜欢上不该喜欢的人怎么办（双方都没对象，但是关系很好所以很纠结很害怕怎么办?但是就是对对方有心动的感觉）该怎么办公</p>
+            </a>
+            <div class="actions">
+                <span class="like" onclick="toggleLike(4)"><i class="fa fa-thumbs-o-up"></i> <span class="like-count">0</span></span>
+                <span class="comment"><i class="fa fa-comment-o"></i> <span class="comment-count">1</span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-ellipsis-h" onclick="toggleMenu(this)"></i>
+                <ul class="menu-options">
+                    <li onclick="reportPost(this)">举报</li>
+                    <li onclick="cancelAction(this)">取消</li>
+                </ul>
+            </div> 
+        </section>
+        <section class="post" id="post-5">
+            <a href="postdetail.html">
+                <div class="user-info">
+                    <img src="./image/微信图片_202407081641171.jpg" alt="用户头像">
+                    <div>
+                        <span class="username">坤只因</span>
+                        <span class="user-status">小学生</span>
+                        <span class="post-time">1小时前</span>
+                    </div>
+                </div>
+                <p>大家都喜欢什么样的课外活动？有没有推荐的？</p>
+            </a>
+            <div class="actions">
+                <span class="like" onclick="toggleLike(5)"><i class="fa fa-thumbs-o-up"></i> <span class="like-count">0</span></span>
+                <span class="comment"><i class="fa fa-comment-o"></i> <span class="comment-count">0</span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-ellipsis-h" onclick="toggleMenu(this)"></i>
+                <ul class="menu-options">
+                    <li onclick="reportPost(this)">举报</li>
+                    <li onclick="cancelAction(this)">取消</li>
+                </ul>
+            </div> 
+        </section>
+        <section class="post" id="post-6">
+            <a href="postdetail.html">
+                <div class="user-info">
+                    <img src="./image/微信图片_20240708164226.jpg" alt="用户头像">
+                    <div>
+                        <span class="username">猫猫</span>
+                        <span class="user-status">初中生</span>
+                        <span class="post-time">2小时前</span>
+                    </div>
+                </div>
+                <p>这周末有谁想一起去爬山吗？人多一起更有趣。</p>
+                <div class="photo-gallery">
+                    <img src="./image/微信图片_20240708163753.jpg" alt="照片1">
+                    <img src="./image/微信图片_20240708164046.jpg" alt="照片2">
+                    <img src="./image/微信图片_20240708164116.jpg" alt="照片3">
+                </div>
+            </a>
+            <div class="actions">
+                <span class="like" onclick="toggleLike(6)"><i class="fa fa-thumbs-o-up"></i> <span class="like-count">3</span></span>
+                <span class="comment"><i class="fa fa-comment-o"></i> <span class="comment-count">5</span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-ellipsis-h" onclick="toggleMenu(this)"></i>
+                <ul class="menu-options">
+                    <li onclick="reportPost(this)">举报</li>
+                    <li onclick="cancelAction(this)">取消</li>
+                </ul>
+            </div> 
+        </section>        
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><span class="iconfont icon-shouye"></span>集市</a></li>
+                <li><a href="search.html"><span class="iconfont icon-sousuo"></span>搜索</a></li>
+                <li><a href="message.html"><span class="iconfont icon-xiaoxi"></span>消息</a></li>
+                <li><a href="mypage.html"><span class="iconfont icon-wode"></span>我的</a></li>
+            </ul>
+        </nav>
+        <a href="post.html"><button class="add-post">+</button></a>
+    </footer>
+</body>
+</html>

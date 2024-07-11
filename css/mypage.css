@@ -1,0 +1,216 @@
+.profile {
+    background-color: #f9fbfd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.profile img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.profile .info {
+    text-align: center;
+}
+.profile .info h2 {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 46px;
+}
+.profile .info h2 a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.profile .info h2 a .icon-arrow-right {
+    font-size: 14px;
+    color: #888;
+}
+.profile .info .university {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 居中对齐 */
+    margin-top: 5px;
+}
+.profile .info .university p {
+    font-size: 14px;
+    color: #888;
+    padding-left: 54px;
+}
+.profile .info .university .switch-btn {
+    border: none;
+    background-color: #dcdcdc;
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.profile .info .university .switch-btn .iconfont {
+    font-size: 14px;
+    margin-right: 2.5px;
+}
+.stats {
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.stats .level {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+.stats .level .label-left{
+    font-size: 14px;
+    background-color: #ff6600;
+    color: #ffffff;
+    width: 15%;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.stats .level .label-right{
+    font-size: 14px;
+    width: 15%;
+    color: #5f5e5e;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: #cbcbcb;
+}
+.stats .level .progress-bar {
+    width: 70%;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 3px;
+    position: relative;
+}
+.stats .level .progress {
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.stats .level .progress .current {
+    position: absolute;
+    top: -20px; /* 调整数值以控制数字与进度条的距离 */
+    right: 0;
+    transform: translateX(50%);
+    color: #ff6600;
+    font-size: 14px;
+    font-weight: bold;
+}
+.stats .level .progress .today {
+    position: absolute;
+    top: -30px; /* 调整数值以控制今日+2与619的距离 */
+    right: 0;
+    transform: translateX(50%);
+    color: #ff6600;
+    font-size: 9px;
+    font-weight: bold;
+}
+.stats .details {
+    margin-top: 0px;
+}
+.stats .details p {
+    color: #888;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 5px;
+}
+.stats .details p:first-child {
+    color: #000000;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.menu {
+    background-color: #fff;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+.menu .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%; /* 每行两个菜单项 */
+    padding: 7px; /* 调整间距 */
+    box-sizing: border-box;
+}
+.menu .item a {
+    color: #333;
+    text-decoration: none;
+    text-align: center; /* 文字居中对齐 */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+}
+.menu .item .arrow {
+    font-size: 16px; /* 箭头图标大小 */
+    color: #bbb;
+    margin-left: 0px; /* 箭头与文字之间的间距 */
+}
+
+
+/* 设置a标签的消息两个字为绿色 */
+footer nav ul li:nth-child(4) a{
+    color: rgb(55, 154, 123);
+}
+/* 橙色高光: */
+.stats .details p .highlight {
+    color: #ff6600;
+}
+
+/* 发帖和集市币 */
+
+.post-coin {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.post-coin .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-coin .item .number {
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+}
+.post-coin .item .label {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+.iconfont icon-arrow-right{
+    display: block;
+    margin-right: 20px;
+}

@@ -1,0 +1,85 @@
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px;
+    height: 40px; /* 调整搜索框高度 */
+}
+.search-input {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #f0f0f0; /* 设置浅灰色背景 */
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 100%; /* 使其高度占满父元素 */
+}
+.search-input i {
+    margin-right: 10px;
+}
+.search-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background-color: transparent; /* 确保输入框背景透明 */
+    height: 100%; /* 使其高度占满父元素 */
+}
+.search-button {
+    margin-left: 10px;
+    cursor: pointer;
+    height: 100%; /* 使其高度占满父元素 */
+    display: flex;
+    align-items: center;
+}
+main {
+    padding-top: 5px;
+}
+
+
+/* 火文设置 */
+/* 火文设置 */
+.hot-posts {
+    padding: 2.5px;
+}
+.hot-posts h2 {
+    display: flex;
+    align-items: center;
+}
+.hot-posts h2::before {
+    content: '\f06d'; /* FontAwesome火焰图标 */
+    font-family: FontAwesome;
+    color: red;
+    margin-right: 10px;
+    font-size: 17px;
+}
+.title {
+    font-size: 17px;
+}
+.hot-posts ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.hot-posts li {
+    flex: 1 0 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.post-title {
+    display: flex;
+    align-items: center;
+}
+.views {
+    margin-right: 11px;
+    color: #999;
+}
+.hot-posts ul li {
+    font-size: 0.8em; /* 将字体设置为原始大小的 80% */
+}
+footer nav ul li:nth-child(2) a{
+    color: rgb(55, 154, 123);
+}

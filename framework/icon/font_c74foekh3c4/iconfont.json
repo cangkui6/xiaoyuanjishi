@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3723957",
+      "name": "绿洲_5G信道",
+      "font_class": "lvzhou_Gxindao",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "5928198",
+      "name": "蓝牙",
+      "font_class": "lanya",
+      "unicode": "ec4a",
+      "unicode_decimal": 60490
+    },
+    {
+      "icon_id": "12724053",
+      "name": "勿扰",
+      "font_class": "wurao",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "25367768",
+      "name": "QQ音乐",
+      "font_class": "QQyinle",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "37541284",
+      "name": "电量-充电-L",
+      "font_class": "dianliang-chongdian-L",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    }
+  ]
+}

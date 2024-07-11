@@ -1,0 +1,139 @@
+Date : 2024-07-11 17:18:07
+Directory : e:\VScode_project\期末大作业
+Total : 90 files,  16672 codes, 293 comments, 1195 blanks, all 18160 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |         27 |      7,435 |        179 |        870 |      8,484 |
+| HTML       |         16 |      2,770 |         16 |        208 |      2,994 |
+| XML        |          1 |      2,671 |          0 |          1 |      2,672 |
+| SCSS       |         14 |      1,758 |         44 |         48 |      1,850 |
+| Less       |         14 |      1,758 |         44 |         48 |      1,850 |
+| JSON       |          8 |        212 |          0 |          8 |        220 |
+| JavaScript |         10 |         68 |         10 |         12 |         90 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         90 |     16,672 |        293 |      1,195 |     18,160 |
+| . (Files)                                                                    |          8 |      1,026 |          0 |         28 |      1,054 |
+| css                                                                          |          8 |      1,385 |         13 |        120 |      1,518 |
+| framework                                                                    |         72 |     14,201 |        270 |      1,035 |     15,506 |
+| framework (Files)                                                            |          1 |         94 |          1 |         16 |        111 |
+| framework\font-awesome                                                       |         31 |      8,515 |        101 |         99 |      8,715 |
+| framework\font-awesome\css                                                   |          2 |      2,328 |         13 |          2 |      2,343 |
+| framework\font-awesome\fonts                                                 |          1 |      2,671 |          0 |          1 |      2,672 |
+| framework\font-awesome\less                                                  |         14 |      1,758 |         44 |         48 |      1,850 |
+| framework\font-awesome\scss                                                  |         14 |      1,758 |         44 |         48 |      1,850 |
+| framework\icon                                                               |         40 |      5,592 |        168 |        920 |      6,680 |
+| framework\icon\font_7ydjpyu6ls                                               |          5 |        804 |         21 |        129 |        954 |
+| framework\icon\font_c1sd7urtjr                                               |          5 |        654 |         21 |        109 |        784 |
+| framework\icon\font_c74foekh3c4                                              |          5 |        774 |         21 |        125 |        920 |
+| framework\icon\font_nndnppu1rwn                                              |          5 |        654 |         21 |        109 |        784 |
+| framework\icon\font_qymff5xnxid                                              |          5 |        654 |         21 |        109 |        784 |
+| framework\icon\font_sls4q6q11r                                               |          5 |        654 |         21 |        109 |        784 |
+| framework\icon\font_sz0eiqafwwd                                              |          5 |        744 |         21 |        121 |        886 |
+| framework\icon\font_tpc0c0te95m                                              |          5 |        654 |         21 |        109 |        784 |
+| js                                                                           |          2 |         60 |         10 |         12 |         82 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                     | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\VScode_project\期末大作业\css\index.css                                        | CSS        |        225 |          4 |         35 |        264 |
+| e:\VScode_project\期末大作业\css\message.css                                      | CSS        |        225 |          4 |         34 |        263 |
+| e:\VScode_project\期末大作业\css\mypage.css                                       | CSS        |        208 |          3 |          5 |        216 |
+| e:\VScode_project\期末大作业\css\post.css                                         | CSS        |        186 |          0 |          2 |        188 |
+| e:\VScode_project\期末大作业\css\postdetail.css                                   | CSS        |        111 |          0 |          0 |        111 |
+| e:\VScode_project\期末大作业\css\postlist.css                                     | CSS        |        102 |          0 |          3 |        105 |
+| e:\VScode_project\期末大作业\css\profile.css                                      | CSS        |        247 |          0 |         39 |        286 |
+| e:\VScode_project\期末大作业\css\search.css                                       | CSS        |         81 |          2 |          2 |         85 |
+| e:\VScode_project\期末大作业\framework\font-awesome\css\font-awesome.css          | CSS        |      2,327 |         10 |          1 |      2,338 |
+| e:\VScode_project\期末大作业\framework\font-awesome\css\font-awesome.min.css      | CSS        |          1 |          3 |          1 |          5 |
+| e:\VScode_project\期末大作业\framework\font-awesome\fonts\fontawesome-webfont.svg | XML        |      2,671 |          0 |          1 |      2,672 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\animated.less            | Less       |         28 |          2 |          5 |         35 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\bordered-pulled.less     | Less       |         17 |          3 |          6 |         26 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\core.less                | Less       |          8 |          2 |          3 |         13 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\fixed-width.less         | Less       |          4 |          2 |          1 |          7 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\font-awesome.less        | Less       |         13 |          4 |          2 |         19 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\icons.less               | Less       |        786 |          2 |          2 |        790 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\larger.less              | Less       |          9 |          3 |          2 |         14 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\list.less                | Less       |         16 |          2 |          2 |         20 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\mixins.less              | Less       |         41 |         10 |         10 |         61 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\path.less                | Less       |         11 |          3 |          2 |         16 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\rotated-flipped.less     | Less       |         12 |          4 |          5 |         21 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\screen-reader.less       | Less       |          2 |          2 |          2 |          6 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\stacked.less             | Less       |         17 |          2 |          2 |         21 |
+| e:\VScode_project\期末大作业\framework\font-awesome\less\variables.less           | Less       |        794 |          3 |          4 |        801 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_animated.scss           | SCSS       |         28 |          2 |          5 |         35 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_bordered-pulled.scss    | SCSS       |         17 |          3 |          6 |         26 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_core.scss               | SCSS       |          8 |          2 |          3 |         13 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_fixed-width.scss        | SCSS       |          4 |          2 |          1 |          7 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_icons.scss              | SCSS       |        786 |          2 |          2 |        790 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_larger.scss             | SCSS       |          9 |          3 |          2 |         14 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_list.scss               | SCSS       |         16 |          2 |          2 |         20 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_mixins.scss             | SCSS       |         41 |         10 |         10 |         61 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_path.scss               | SCSS       |         11 |          3 |          2 |         16 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_rotated-flipped.scss    | SCSS       |         12 |          4 |          5 |         21 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_screen-reader.scss      | SCSS       |          2 |          2 |          2 |          6 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_stacked.scss            | SCSS       |         17 |          2 |          2 |         21 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\_variables.scss          | SCSS       |        794 |          3 |          4 |        801 |
+| e:\VScode_project\期末大作业\framework\font-awesome\scss\font-awesome.scss        | SCSS       |         13 |          4 |          2 |         19 |
+| e:\VScode_project\期末大作业\framework\icon\font_7ydjpyu6ls\demo.css              | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_7ydjpyu6ls\demo_index.html       | HTML       |        288 |          2 |         33 |        323 |
+| e:\VScode_project\期末大作业\framework\icon\font_7ydjpyu6ls\iconfont.css          | CSS        |         29 |          0 |          9 |         38 |
+| e:\VScode_project\期末大作业\framework\icon\font_7ydjpyu6ls\iconfont.js           | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_7ydjpyu6ls\iconfont.json         | JSON       |         51 |          0 |          1 |         52 |
+| e:\VScode_project\期末大作业\framework\icon\font_c1sd7urtjr\demo.css              | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_c1sd7urtjr\demo_index.html       | HTML       |        188 |          2 |         18 |        208 |
+| e:\VScode_project\期末大作业\framework\icon\font_c1sd7urtjr\iconfont.css          | CSS        |         14 |          0 |          4 |         18 |
+| e:\VScode_project\期末大作业\framework\icon\font_c1sd7urtjr\iconfont.js           | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_c1sd7urtjr\iconfont.json         | JSON       |         16 |          0 |          1 |         17 |
+| e:\VScode_project\期末大作业\framework\icon\font_c74foekh3c4\demo.css             | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_c74foekh3c4\demo_index.html      | HTML       |        268 |          2 |         30 |        300 |
+| e:\VScode_project\期末大作业\framework\icon\font_c74foekh3c4\iconfont.css         | CSS        |         26 |          0 |          8 |         34 |
+| e:\VScode_project\期末大作业\framework\icon\font_c74foekh3c4\iconfont.js          | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_c74foekh3c4\iconfont.json        | JSON       |         44 |          0 |          1 |         45 |
+| e:\VScode_project\期末大作业\framework\icon\font_nndnppu1rwn\demo.css             | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_nndnppu1rwn\demo_index.html      | HTML       |        188 |          2 |         18 |        208 |
+| e:\VScode_project\期末大作业\framework\icon\font_nndnppu1rwn\iconfont.css         | CSS        |         14 |          0 |          4 |         18 |
+| e:\VScode_project\期末大作业\framework\icon\font_nndnppu1rwn\iconfont.js          | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_nndnppu1rwn\iconfont.json        | JSON       |         16 |          0 |          1 |         17 |
+| e:\VScode_project\期末大作业\framework\icon\font_qymff5xnxid\demo.css             | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_qymff5xnxid\demo_index.html      | HTML       |        188 |          2 |         18 |        208 |
+| e:\VScode_project\期末大作业\framework\icon\font_qymff5xnxid\iconfont.css         | CSS        |         14 |          0 |          4 |         18 |
+| e:\VScode_project\期末大作业\framework\icon\font_qymff5xnxid\iconfont.js          | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_qymff5xnxid\iconfont.json        | JSON       |         16 |          0 |          1 |         17 |
+| e:\VScode_project\期末大作业\framework\icon\font_sls4q6q11r\demo.css              | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_sls4q6q11r\demo_index.html       | HTML       |        188 |          2 |         18 |        208 |
+| e:\VScode_project\期末大作业\framework\icon\font_sls4q6q11r\iconfont.css          | CSS        |         14 |          0 |          4 |         18 |
+| e:\VScode_project\期末大作业\framework\icon\font_sls4q6q11r\iconfont.js           | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_sls4q6q11r\iconfont.json         | JSON       |         16 |          0 |          1 |         17 |
+| e:\VScode_project\期末大作业\framework\icon\font_sz0eiqafwwd\demo.css             | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_sz0eiqafwwd\demo_index.html      | HTML       |        248 |          2 |         27 |        277 |
+| e:\VScode_project\期末大作业\framework\icon\font_sz0eiqafwwd\iconfont.css         | CSS        |         23 |          0 |          7 |         30 |
+| e:\VScode_project\期末大作业\framework\icon\font_sz0eiqafwwd\iconfont.js          | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_sz0eiqafwwd\iconfont.json        | JSON       |         37 |          0 |          1 |         38 |
+| e:\VScode_project\期末大作业\framework\icon\font_tpc0c0te95m\demo.css             | CSS        |        435 |         19 |         86 |        540 |
+| e:\VScode_project\期末大作业\framework\icon\font_tpc0c0te95m\demo_index.html      | HTML       |        188 |          2 |         18 |        208 |
+| e:\VScode_project\期末大作业\framework\icon\font_tpc0c0te95m\iconfont.css         | CSS        |         14 |          0 |          4 |         18 |
+| e:\VScode_project\期末大作业\framework\icon\font_tpc0c0te95m\iconfont.js          | JavaScript |          1 |          0 |          0 |          1 |
+| e:\VScode_project\期末大作业\framework\icon\font_tpc0c0te95m\iconfont.json        | JSON       |         16 |          0 |          1 |         17 |
+| e:\VScode_project\期末大作业\framework\reset.css                                  | CSS        |         94 |          1 |         16 |        111 |
+| e:\VScode_project\期末大作业\index.html                                           | HTML       |        212 |          0 |          1 |        213 |
+| e:\VScode_project\期末大作业\js\index.js                                          | JavaScript |         53 |         10 |         10 |         73 |
+| e:\VScode_project\期末大作业\js\post.js                                           | JavaScript |          7 |          0 |          2 |          9 |
+| e:\VScode_project\期末大作业\message.html                                         | HTML       |        174 |          0 |          1 |        175 |
+| e:\VScode_project\期末大作业\mypage.html                                          | HTML       |        133 |          0 |          8 |        141 |
+| e:\VScode_project\期末大作业\post.html                                            | HTML       |        159 |          0 |         11 |        170 |
+| e:\VScode_project\期末大作业\postdetail.html                                      | HTML       |        112 |          0 |          1 |        113 |
+| e:\VScode_project\期末大作业\postlist.html                                        | HTML       |        120 |          0 |          2 |        122 |
+| e:\VScode_project\期末大作业\profile.html                                         | HTML       |         52 |          0 |          3 |         55 |
+| e:\VScode_project\期末大作业\search.html                                          | HTML       |         64 |          0 |          1 |         65 |
+| Total                                                                        |            |     16,672 |        293 |      1,195 |     18,160 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
